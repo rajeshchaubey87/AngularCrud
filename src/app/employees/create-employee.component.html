@@ -1,0 +1,69 @@
+<form #employeeForm="ngForm" (ngSubmit)="saveEmployee(employeeForm)">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Create Employee</h3>
+        </div>
+        <!-- Create Panel body Start here -->
+        <div class="panel-body">
+            <!--Full Name Start Here -->
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" name="FullName" [(ngModel)]="fullName" id="fullName" class="form-control">
+            </div>
+            <!--Full Name End Here -->
+
+
+            <!--Email Start Here -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="Email" [(ngModel)]="email" id="email" class="form-control">
+            </div>
+            <!--Email End Here -->
+
+            <!--PhoneNumber Start Here -->
+            <div class="form-group">
+                <label for="PhoneNumber">PhoneNumber</label>
+                <input type="Number" name="PhoneNumber" [(ngModel)]="PhoneNumber" id="PhoneNumber" class="form-control">
+            </div>
+            <!--PhoneNumber End Here -->
+
+
+            <!-- ContactPreference Start Here -->
+            <div class="form-group">
+                <label>ContactPreference</label>
+                <div class="form-control">
+                    <label class="radio-inline">
+                        <input type="radio" value="Phone" name="ContactPreference" [(ngModel)]="ContactPreference">Phone
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" value="Email" name="ContactPreference" [(ngModel)]="ContactPreference">Email
+                    </label>
+                </div>
+            </div>
+            <!-- ContactPreference End Here -->
+
+
+            <!-- Gender Start Here -->
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="form-control">
+                    <label class="radio-inline">
+                      <input type="radio" value="Male" name="gender" [(ngModel)]="gender">Male
+                  </label>
+                    <label class="radio-inline">
+                      <input type="radio" value="FeMale" name="gender" [(ngModel)]="gender">Female
+                  </label>
+                </div>
+                <!-- Gender End Here -->
+            </div>
+            <!-- Create Panel body End here -->
+
+            <!-- Create Panel Footer Start here -->
+            <div class="panel-footer">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+            <!-- Create Panel Footer End here -->
+        </div>
+    </div>
+</form>
+Angular Generated Form Model {{employeeForm.value | json}}

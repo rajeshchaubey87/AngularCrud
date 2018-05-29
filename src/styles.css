@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+nav {
+    display: block;
+    margin-top: 2%;
+    background: #000;
+    color: #fff;
+}
+
+nav li {
+    font-size: 18px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+table {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+th,
+tr {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
